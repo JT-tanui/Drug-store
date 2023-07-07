@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KCA University Cultural Week Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>KCA University Cultural Week Registration</h1>
+    <form action="submit_registration.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <label for="university">University/Institution:</label>
+      <input type="text" id="university" name="university" required>
+      <label for="cultural_group">Cultural Group:</label>
+      <select id="cultural_group" name="cultural_group" required>
+        <option value="">Select</option>
+        <option value="African Dance">African Dance</option>
+        <option value="Traditional Music">Traditional Music</option>
+        <option value="Cultural Fashion">Cultural Fashion</option>
+      </select>
+      <input type="submit" value="Register">
+    </form>
+  </div>
+</body>
+</html>
